@@ -55,7 +55,6 @@
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
 }
@@ -93,7 +92,6 @@
     background-color: white;
     padding: 40px;
     display: flex;
-    flex-wrap: wrap;
 }
 .aboutContent .image{
     padding: 40px;
@@ -193,7 +191,7 @@
     }
     .homeContent .headText h1{
         font-size: 100px;
-        text-align: center;
+        text-align:left;
     }
     .navbar{
         flex-direction: column;
@@ -201,10 +199,37 @@
     .homeContent{
         flex-direction: column;
     }
+    .aboutContent{
+        flex-direction: column;
+    }
     .headImg img{
         width: 100%;
     }
     .image img{
         width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1500px){
+    .homeContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .homeContent .headText h1{
+        text-align:left;
+    }
+  }
+
+  @media screen and (max-width: 1247px){
+    .aboutContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .homeContent .headText h1{
+        font-size: 5rem;
+        text-align:left;
     }
   }
