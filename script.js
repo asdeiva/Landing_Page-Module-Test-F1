@@ -8,6 +8,6 @@ function oksubmit() {
         alert("Form submitted successfully")
     }
     else{
-        alert("All fileds are required")
+        console.log("All fileds are required")
     }
   }
