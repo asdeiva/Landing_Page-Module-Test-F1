@@ -232,4 +232,49 @@
         font-size: 5rem;
         text-align:left;
     }
+    .navbar .navlinks a{
+        gap:3px;
+        padding: 5px;
+        align-items: center;
+    }
+    .down a img{
+        width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .homeContent .headText h1{
+        font-size: 5rem;
+        text-align:left;
+    }
+    .navbar .navlinks a{
+        gap:3px;
+        padding: 5px;
+        font-size: large;
+        justify-content: center;
+        align-items: center;
+    }
+    .down a img{
+        width: 80px;
+    }
+    .aboutContent{
+        padding: 5px;
+    }
+    .abtcontent .headding{
+        text-align: center;
+        font-size: 40px;
+    }
+    .servContent .headline{
+        text-align: center;
+        font-size: 40px;
+    }
+    .contactContent .headline{
+        text-align: center;
+        font-size: 40px;
+        padding: 5px;
+    }
+    .contactContent{
+        color: #FFFFFF;
+        margin: 30px 20px;
+    }
   }
