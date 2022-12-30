@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.pagecontent{
+    padding: 5px;
+    background-color: black;
+    
+}
+ /* Navbar Section */
+ .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+.navbar{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    background: #000000;
+    border-bottom: 2px solid #FFFFFF;
+    z-index: 10;
+}
+.navbar .logo{
+    padding: 15px;
+}
+.navbar .navlinks{
+    display: flex;
+}
+.navbar .navlinks a{
+    display: flex;
+    gap: 20px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 15px;
+}
+.navbar .navlinks a:hover{
+    color: red;
+}
+
+/* Home section */
+/* .fa-icon{
+    color: #FFFFFF;
+    width: 100px;
+} */
+.homeContent{
+    margin-top: 120px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+.homeContent .headText h1{
+    font-size: 150px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    letter-spacing: 5px;
+    padding: 10px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.homeContent .headImg{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+.down a img{
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+/* about us */
+.aboutContent{
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutContent .image{
+    padding: 40px;
+}
+.aboutContent .abtcontent{
+    padding : 40px  
+}
+.abtcontent .headding{
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 121px;
+}
+.abtcontent .para{
+    margin-top: 30px;
+}
+
+/* Our Services */
+.servContent{
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+.servContent .headline{
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 30px;
+}
+.card {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    
+    /* justify-content: center; */
+}
+.card-container { 
+    min-width: 40%;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: scroll;
+    border: 2px solid #000000;
+}
+.card-container .card-content h3{
+    padding: 10px;
+}
+.card-container .card-content p{
+    padding: 10px;
+}
+.card-container:hover{
+    background-color: #000000;
+    color: white;
+    transition: 0.3s;
+}
+
+/* contact us */
+.contactContent{
+    color: #FFFFFF;
+    margin: 100px 20px;
+}
+.contactContent .headline{
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 30px;
+    text-align: center;
+}
+.contactContent .formContent .form{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+  }
+.formContent .form .inrow{
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid white;
+    background-color: #000000;
+    color:#FFFFFF;
+}
+.form .btn {
+    background: #ffffff;
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .homeContent{
+        margin-top: 150px;
+    }
+    .navbar .logo{
+        align-items: center ;
+        text-align: center;
+    }
+    .homeContent .headText h1{
+        font-size: 100px;
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .homeContent{
+        flex-direction: column;
+    }
+    .headImg img{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+    }
+  }
