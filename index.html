@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+<body class="pagecontent">
+    <!-- Navbar Section -->
+    <section id="navbar">
+        <div class="navbar sticky">
+            <div class="logo">
+                <p>Business Name</p>
+            </div>
+            <div class="navlinks">
+                    <a class="navitems" href="#home">Home</a>
+                    <a class="navitems" href="#aboutUs">About Us</a>
+                    <a class="navitems" href="#ourservices">Our Services</a>
+                    <a class="navitems" href="#contactUs">Contact Us</a>
+                  </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Home section -->
+    <section id="home">
+        <div class="homeContent">
+            <div class="headText m-head">
+                <h1>Business <br> landing <br> page</h1>
+            </div>
+            <div class="headImg">
+                <img src="./src/pngegg 1.png" alt="Home Image">
+            </div>
+        </div>
+        <div class="down">
+            <a href="#ourservices"><img src="./src/icons8-down-arrow-100.png" alt="arrow"></a>
+        </div>
+    </section>
+    <!-- about us  -->
+    <section id="aboutUs">
+        <div class="aboutContent">
+            <div class="image">
+                <img src="./src/pexels-hidden-couple-3048527 1.png" alt="about Image">
+            </div>
+            <div class="abtcontent">
+                <div class="headding">
+                    <h1>about us</h1>
+                </div>
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste assumenda labore! Qui earum culpa voluptatum at ducimus corporis nulla quos aperiam in excepturi sit labore explicabo nobis, velit iste commodi minus ad delectus corrupti. Corporis deserunt totam provident rem laborum magni neque culpa? Possimus iure qui sit sequi deleniti hic ex minima, fuga, praesentium eum quidem. Natus pariatur quo excepturi dolores nostrum, ipsam cupiditate, exercitationem perferendis, ut tempore molestias! Doloremque porro, qui necessitatibus expedita in id accusamus molestias temporibus sapiente eius commodi natus, delectus assumenda! Iste pariatur, eum dolor impedit vitae nisi suscipit inventore incidunt totam. Aspernatur ab voluptatum esse sapiente officiis nisi autem eos quae nihil quibusdam aliquid possimus eum ex, perspiciatis hic voluptates eius debitis dignissimos? Quo omnis asperiores temporibus recusandae qui obcaecati culpa dolores quod doloremque? Consequatur maxime asperiores aliquam eligendi ratione quod ipsam numquam cum nisi accusamus sit fuga repellat blanditiis, earum iusto odio excepturi vitae sed. Quasi, explicabo quas sed impedit expedita ad possimus voluptatibus a fugit error, iusto natus repellat aut deleniti temporibus pariatur sapiente non vero perspiciatis quam? Quaerat illo ut quisquam. Optio quis, aperiam corrupti blanditiis perferendis delectus voluptas necessitatibus consectetur, alias sed deserunt doloribus nisi. A officia voluptatibus numquam accusamus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Our Services -->
+    <section id="ourservices">
+        <div class="servContent">
+            <div class="headline">
+                <h1>our services</h1>
+            </div>
+            <div class="card">
+                <div class="card-container">
+                    <div class="card-content">
+                        <h3>Service 1 </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eligendi. Quam consectetur iusto, blanditiis, velit nam quasi culpa nostrum aspernatur nesciunt fugiat iure error a! Minima sapiente modi officia magnam.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-content">
+                        <h3>Service 2 </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae numquam, perspiciatis provident, cupiditate expedita vel animi a sed sunt modi fugit iste! Vel autem voluptatum quibusdam nesciunt quis! Repellendus, sit.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-content">
+                        <h3>Service 3 </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam inventore, est beatae quam tempore aut minima consequatur totam dolorem pariatur vel? Reprehenderit ducimus, ad error debitis voluptates deserunt nobis.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section id="contactUs">
+        <div class="contactContent">
+            <div class="headline">
+                <h1>contact us</h1>
+            </div>
+            <div class="formContent">
+                <form action="#" class="form">
+                    <input type="text" id="fname" class="inrow"  placeholder="Full Name" value="" required>
+                    <input type="text" id="lname" class="inrow"  placeholder="Last Name" value="" required>
+                    <input type="email" id="email" class="inrow"  placeholder="Email Address" value="" required>
+                    <input type="text" id="reason" class="inrow"  placeholder="Resason For Contacting" value="" required>
+                    
+                    <input type="submit" id="submit" onclick="oksubmit()" class="btn" value="Submit">
+                  </form>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
